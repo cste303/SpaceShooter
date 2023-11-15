@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             // Deal damage to the enemy (you can replace this with your own logic)
-           // other.GetComponent<EnemyScript>().TakeDamage(damage);
+            other.GetComponent<EnemyScript>().TakeDamage(damage);
 
             // Destroy the bullet on collision
             Destroy(gameObject);
